@@ -259,7 +259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 47642041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
+  m_Script: {fileID: 11500000, guid: b79411e4908e2400996093555593a4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &47642044
@@ -302,7 +302,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 47642043}
-        m_MethodName: Slide
+        m_MethodName: RequestTabSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3085,7 +3085,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 289032639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
+  m_Script: {fileID: 11500000, guid: b79411e4908e2400996093555593a4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &289032642
@@ -3128,7 +3128,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 289032641}
-        m_MethodName: Slide
+        m_MethodName: RequestTabSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6681,7 +6681,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 759978766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
+  m_Script: {fileID: 11500000, guid: b79411e4908e2400996093555593a4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &759978769
@@ -6724,7 +6724,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 759978768}
-        m_MethodName: Slide
+        m_MethodName: RequestTabSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9314,7 +9314,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1215218340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
+  m_Script: {fileID: 11500000, guid: b79411e4908e2400996093555593a4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1215218343
@@ -9357,7 +9357,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1215218342}
-        m_MethodName: Slide
+        m_MethodName: RequestTabSlide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
