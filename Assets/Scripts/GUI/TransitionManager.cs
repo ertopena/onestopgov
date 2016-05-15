@@ -67,6 +67,8 @@ namespace GUI {
 
 		public void ReportTransitionEnd () {
 			InTransition = false;
+			if (screens[_lastScreen].rect.GetComponent<AppScreen> ())
+				screens[_lastScreen].rect.GetComponent<AppScreen> ().ReportScreenLoaded ();
 		}
 	}
 }
