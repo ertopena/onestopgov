@@ -262,8 +262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slidingScreen: {fileID: 831728276}
-  slideFrom: 1
 --- !u!114 &47642044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2717,6 +2715,9 @@ GameObject:
   - 223: {fileID: 279391613}
   - 114: {fileID: 279391612}
   - 114: {fileID: 279391611}
+  - 114: {fileID: 279391616}
+  - 114: {fileID: 279391615}
+  - 114: {fileID: 279391617}
   m_Layer: 5
   m_Name: AppCanvas
   m_TagString: Untagged
@@ -2800,6 +2801,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &279391615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279391610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &279391616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279391610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586a387d2cd1b4f2f8b5a9dff9f0a9c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screens:
+  - rect: {fileID: 1467907337}
+    name: All Services
+  - rect: {fileID: 917514779}
+    name: My Services
+  - rect: {fileID: 831728276}
+    name: Profile
+  - rect: {fileID: 722286139}
+    name: Settings
+--- !u!114 &279391617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279391610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 832b77aad3f074190858942474b77b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: {fileID: 666188684}
 --- !u!1 &282217580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,8 +3088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slidingScreen: {fileID: 722286139}
-  slideFrom: 1
 --- !u!114 &289032642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6104,7 +6146,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Profile
+  m_Text: My Services
 --- !u!222 &666188685
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6642,8 +6684,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slidingScreen: {fileID: 917514779}
-  slideFrom: 1
 --- !u!114 &759978769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9277,8 +9317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: facd8108a9003411c9abd35817291672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slidingScreen: {fileID: 1467907337}
-  slideFrom: 0
 --- !u!114 &1215218343
 MonoBehaviour:
   m_ObjectHideFlags: 0

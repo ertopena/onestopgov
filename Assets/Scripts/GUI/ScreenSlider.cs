@@ -9,24 +9,19 @@ namespace GUI {
 		Right
 	}
 
+
 	public class ScreenSlider : MonoBehaviour {
 
 		public static bool IsSliding { get; private set; }
 
-		public RectTransform slidingScreen;
-		public SlideFrom slideFrom;
 
-
-		public void Slide () {
-			if (!IsSliding) {
-				IsSliding = true;
-				StopAllCoroutines ();
-				StartCoroutine (CoSlide ());
-			}
+		public void Slide (RectTransform slidingScreen, SlideFrom slideFrom) {
+			StopAllCoroutines ();
+			StartCoroutine (CoSlide (slidingScreen, slideFrom));
 		}
 
 
-		IEnumerator CoSlide () {
+		IEnumerator CoSlide (RectTransform slidingScreen, SlideFrom slideFrom) {
 			Vector2 centeredPos = slidingScreen.anchoredPosition;
 
 
@@ -41,14 +36,16 @@ namespace GUI {
 
 			// Slide in.
 			for (int i = 0; i < 20; i++) {
-				slidingScreen.anchoredPosition = Vector2.Lerp(slidingScreen.anchoredPosition, centeredPos, 0.3f);
+				slidingScreen.anchoredPosition = Vector2.Lerp(slidingScreen.anchoredPosition, centeredPos, 0.33f);
 				yield return new WaitForFixedUpdate ();
 			}
 
 
 			// End motion and allow sliding again.
 			slidingScreen.anchoredPosition = centeredPos;
-			IsSliding = false;
+
+
+			GetComponent<TransitionManager>().ReportTransitionEnd();
 		}
 	}
 }
